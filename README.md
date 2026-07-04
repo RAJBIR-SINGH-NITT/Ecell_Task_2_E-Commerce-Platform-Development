@@ -5,7 +5,7 @@ Task 2. It has a customer-facing storefront and a separate admin dashboard,
 backed by a Flask API.
 
 Live demo: `<add your Vercel link here>`
-Backend API: `<add your Render link here>`
+Backend API: `https://ecell-task-2-e-commerce-platform.onrender.com`
 
 ## What's in it
 
