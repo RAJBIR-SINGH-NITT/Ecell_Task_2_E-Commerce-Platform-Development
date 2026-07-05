@@ -2,14 +2,17 @@
  * api.js
  * ------
  * Every network call in the app goes through this one file. That way:
- *   - we attach the JWT token in exactly one place (not 20 different pages)
- *   - if the backend URL or error format ever changes, we fix it here once
+ * - we attach the JWT token in exactly one place (not 20 different pages)
+ * - if the backend URL or error format ever changes, we fix it here once
  *
  * Each function returns already-parsed JSON, and throws an Error with a
  * readable message if the backend responded with an error status.
  */
 
-const BASE_URL = "/api"; // Vite proxies this to Flask, see vite.config.js
+// Use local Vite proxy in development, use Render URL in production
+const BASE_URL = import.meta.env.DEV 
+  ? "/api" 
+  : "https://ecell-task-2-e-commerce-platform.onrender.com/api";
 
 function getToken() {
   return localStorage.getItem("token");
