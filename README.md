@@ -4,7 +4,7 @@ A full-stack e-commerce platform built for E-Cell NIT Trichy's Tech Domain
 Task 2. It has a customer-facing storefront and a separate admin dashboard,
 backed by a Flask API.
 
-Live demo: `<add your Vercel link here>`
+Live demo: `ecell-task-2-e-commerce-platform-development-git-main-rbcl.vercel.app`
 Backend API: `https://ecell-task-2-e-commerce-platform.onrender.com`
 
 ## What's in it
